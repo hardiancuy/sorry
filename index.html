@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maaf Ya 😢</title>
   <style>
     body {
@@ -12,22 +13,32 @@
       margin: 0;
       padding: 0;
     }
+
     .container {
-      margin-top: 10%;
+      margin: 10% auto;
+      padding: 20px;
+      max-width: 600px;
     }
+
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       color: #ff69b4;
+      margin-bottom: 10px;
     }
+
     p {
-      font-size: 1.5em;
-      margin: 20px;
+      font-size: 1.2em;
+      margin: 15px 10px;
     }
+
     .cat-gif {
-      width: 300px;
+      width: 90%;
+      max-width: 320px;
       border-radius: 15px;
       box-shadow: 0 0 20px #ffb6c1;
+      margin: 20px 0;
     }
+
     .btn-forgive {
       background-color: #ff69b4;
       color: white;
@@ -36,21 +47,40 @@
       border-radius: 10px;
       font-size: 1em;
       cursor: pointer;
-      margin-top: 30px;
+      transition: 0.3s;
     }
+
     .btn-forgive:hover {
       background-color: #ff1493;
+      transform: scale(1.05);
     }
+
     footer {
-      margin-top: 50px;
-      font-size: 0.8em;
+      margin-top: 40px;
+      font-size: 0.9em;
       color: #999;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .btn-forgive {
+        width: 80%;
+        padding: 12px;
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>😔 Maafin Aku Ya...</h1>
+    <h1> Maafin Aku Ya...</h1>
     <p>Aku nggak bermaksud nyakitin kamu. Serius deh.</p>
     <p>Aku tahu aku mungkin udah bikin kamu kecewa, bikin kamu sedih, dan mungkin bikin kamu mikir ulang tentang aku.
       Tapi aku pengin kamu tahu... aku gak pernah niat buat nyakitin kamu sama sekali. Kadang, aku terlalu cuek, terlalu bodoh, dan terlalu santai tanpa sadar kalau yang kulakuin itu nyakitin kamu.</p>
@@ -63,3 +93,4 @@
   </footer>
 </body>
 </html>
+
