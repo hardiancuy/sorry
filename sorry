@@ -52,7 +52,8 @@
   <div class="container">
     <h1>😔 Maafin Aku Ya...</h1>
     <p>Aku nggak bermaksud nyakitin kamu. Serius deh.</p>
-    <p>Kalau aku bisa kembali ke masa lalu, aku bakal bilang ke diriku: “Jangan bodoh, jangan sakitin dia!”</p>
+    <p>Aku tahu aku mungkin udah bikin kamu kecewa, bikin kamu sedih, dan mungkin bikin kamu mikir ulang tentang aku.
+      Tapi aku pengin kamu tahu... aku gak pernah niat buat nyakitin kamu sama sekali. Kadang, aku terlalu cuek, terlalu bodoh, dan terlalu santai tanpa sadar kalau yang kulakuin itu nyakitin kamu.</p>
     <img class="cat-gif" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Cute Cat Apology">
     <br>
     <button class="btn-forgive" onclick="alert('Yay! Terima kasih udah maafin aku ❤️')">Aku Maafin Kamu 😅</button>
@@ -62,4 +63,5 @@
   </footer>
 </body>
 </html>
+
 
