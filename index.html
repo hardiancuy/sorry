@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maaf Ya 😢</title>
   <style>
     body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: Arial, sans-serif;
       text-align: center;
       background-color: #fff0f5;
       color: #333;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
+      animation: fadeIn 2s ease-in;
     }
 
     .container {
       margin: 10% auto;
       padding: 20px;
       max-width: 600px;
+      animation: slideUp 1.2s ease-out;
     }
 
     h1 {
@@ -29,6 +32,19 @@
     p {
       font-size: 1.2em;
       margin: 15px 10px;
+      line-height: 1.6;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .velencia-photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ff69b4;
+      margin: 15px auto;
+      box-shadow: 0 0 12px #ffa6c9;
+      animation: bounceIn 1.5s;
     }
 
     .cat-gif {
@@ -37,6 +53,7 @@
       border-radius: 15px;
       box-shadow: 0 0 20px #ffb6c1;
       margin: 20px 0;
+      animation: float 3s infinite ease-in-out;
     }
 
     .btn-forgive {
@@ -47,7 +64,8 @@
       border-radius: 10px;
       font-size: 1em;
       cursor: pointer;
-      transition: 0.3s;
+      animation: pulse 2s infinite;
+      transition: transform 0.3s;
     }
 
     .btn-forgive:hover {
@@ -59,6 +77,7 @@
       margin-top: 40px;
       font-size: 0.9em;
       color: #999;
+      animation: fadeIn 2s ease-in;
     }
 
     @media (max-width: 500px) {
@@ -73,23 +92,99 @@
       .btn-forgive {
         width: 80%;
         padding: 12px;
-        font-size: 1em;
+      }
+
+      .velencia-photo {
+        width: 110px;
+        height: 110px;
+      }
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      70% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.6);
+      }
+      70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(255, 105, 180, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>😔 Maafin Aku Ya...</h1>
+    <h1>Maafin Aku Ya...</h1>
+
+    <!-- Ganti link src ini dengan foto Velencia -->
+    <img class="velencia-photo" src="https://via.placeholder.com/150" alt="Foto Velencia" />
+
     <p>Aku nggak bermaksud nyakitin kamu. Serius deh.</p>
     <p>Aku tahu aku mungkin udah bikin kamu kecewa, bikin kamu sedih, dan mungkin bikin kamu mikir ulang tentang aku.
-      Tapi aku pengin kamu tahu... aku gak pernah niat buat nyakitin kamu sama sekali. Kadang, aku terlalu cuek, terlalu bodoh, dan terlalu santai tanpa sadar kalau yang kulakuin itu nyakitin kamu.</p>
-    <img class="cat-gif" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Cute Cat Apology">
-    <br>
+    Tapi aku pengin kamu tahu... aku gak pernah niat buat nyakitin kamu sama sekali. Kadang, aku terlalu cuek, terlalu bodoh, dan terlalu santai tanpa sadar kalau yang kulakuin itu nyakitin kamu.</p>
+
+    <img class="cat-gif" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Cute Cat Apology" />
+
+    <br />
     <button class="btn-forgive" onclick="alert('Yay! Terima kasih udah maafin aku ❤️')">Aku Maafin Kamu 😅</button>
   </div>
+
   <footer>
     Dibuat dengan rasa bersalah & kopi dingin 🙏
   </footer>
+
+  <!-- Audio autoplay dan loop -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg" />
+    Browser kamu nggak support audio.
+  </audio>
 </body>
 </html>
+
