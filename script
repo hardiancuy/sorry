@@ -1,0 +1,12 @@
+function jumpscare() {
+  const audio = document.getElementById('scream');
+  const popup = document.getElementById('jumpscare');
+
+  popup.style.display = 'flex';
+  audio.play();
+
+  // Hilangkan jumpscare setelah 3 detik
+  setTimeout(() => {
+    popup.style.display = 'none';
+  }, 3000);
+}
